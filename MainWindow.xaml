@@ -1,0 +1,38 @@
+﻿<Window x:Class="RegexValidator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RegexValidator"
+        mc:Ignorable="d"
+        Title="RegexValidator 1.0" Height="300" Width="500"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}" ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Data:" HorizontalAlignment="Left" Margin="68,48,0,0" VerticalAlignment="Top" Height="45" Width="81" FontSize="30"/>
+        <TextBox x:Name="dataTextBox"
+        materialDesign:HintAssist.Hint="eg.: b"
+        Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+        VerticalAlignment="Top" Height="49" Margin="154,38,124,0" FontSize="16" CaretBrush="#FF33CF24" />
+        <Label Content="Pattern:" Margin="33,122,0,0" FontSize="30" Width="116" Height="45" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <TextBox x:Name="patternTextBox"
+            materialDesign:HintAssist.Hint="eg.: [a-c]"
+            Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+            VerticalAlignment="Center" Height="49" Margin="154,0,124,0" FontSize="16" CaretBrush="#FF33CF24" />
+        <Button
+        Style="{StaticResource MaterialDesignFlatLightBgButton}"
+        ToolTip="MaterialDesignFlatLightButton" Margin="0,207,206,0" Height="32" VerticalAlignment="Top" HorizontalAlignment="Right" Width="87" Background="#FF8758DE" BorderBrush="#FF8758DE" Click="Button_Click">
+            Validate
+
+        </Button>
+    </Grid>
+</Window>
