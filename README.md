@@ -11,4 +11,4 @@ Type the data you want to regex and type the regex pattern. If it matches the pr
 **[PayPal](https://www.paypal.me/iklevi)**
 
 
-*This project is licensed under the MIT License. Made by Ilyó Kovács Levente and the contributors.*
+*This project is licensed under the MIT License. Made by Ilyó Kovács Levente.*
